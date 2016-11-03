@@ -1,0 +1,12 @@
+%exercise 8.2 
+clc
+clear all
+close all
+nt=100
+
+for n=1:2:nt
+    z=n+1;
+    FINDINGP(n)= 1/((2*n-1)*((2*z-1)));
+   
+end
+sum(FINDINGP)*8
