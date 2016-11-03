@@ -1,4 +1,6 @@
-%exercise 8.2 
+%part b
+%Rearranging the series speeds up the convergence:
+% π/8 = 1/1 × 3 +1/5 × 7 +1/9 × 11 ···
 clc
 clear all
 close all
