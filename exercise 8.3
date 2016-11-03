@@ -1,0 +1,20 @@
+ %The following method of computing π was discovered by Archimedes:
+ A=1;
+N=6;
+C=1
+for i=1:10;
+    Nconglomerate(C)=N
+    N=2*N;
+    A=((2-sqrt(4-A.^2))^0.5);
+    C=C+1
+end
+L=((N*A)/2)
+U=L/(sqrt(1-((A.^2)/2)))
+P=(U+L)/2
+p=[P P P P P P P P P P]
+E=(U-L)/2
+e=[E E E E E E E E E E]
+plot(Nconglomerate, p,'g'),grid on
+hold on
+plot(Nconglomerate, e, 'b'),grid on
+legend('Nconglomerate vs p','Nconglomerate vs e');
